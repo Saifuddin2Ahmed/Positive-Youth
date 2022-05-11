@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'signUp.dart';
 import 'home.dart';
+//092986544
 
 void main() {
   runApp(MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-   MyHomePage({Key? key, required this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -48,8 +49,7 @@ class MyHomePage extends StatelessWidget {
               child: TextField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-                    labelText: "Email Address",
-                    border: OutlineInputBorder()),
+                    labelText: "Email Address", border: OutlineInputBorder()),
               ),
             ),
             Padding(
@@ -58,8 +58,7 @@ class MyHomePage extends StatelessWidget {
                 // keyboardType: TextInputType.emailAddress,
                 obscureText: true,
                 decoration: InputDecoration(
-                    labelText: "Password",
-                    border: OutlineInputBorder()),
+                    labelText: "Password", border: OutlineInputBorder()),
               ),
             ),
             Padding(
@@ -97,21 +96,20 @@ class MyHomePage extends StatelessWidget {
                         fontSize: 15,
                       ),
                       children: <TextSpan>[
-                        TextSpan(
-                            text: 'Sign Up',
-                            style: TextStyle(color: Colors.blue, fontSize: 15),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => MyForm(),
-                                    ));
-                              })
-                      ])),
+                    TextSpan(
+                        text: 'Sign Up',
+                        style: TextStyle(color: Colors.blue, fontSize: 15),
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => MyForm(),
+                                ));
+                          })
+                  ])),
             )
           ]),
         ));
   }
 }
-
