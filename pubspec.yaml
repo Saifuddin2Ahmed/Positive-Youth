@@ -18,7 +18,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.16.2 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
+
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -39,6 +40,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  firebase_core: ^1.17.0
+  firebase_auth: ^3.3.15
+  #firebase_storage: ^10.2.16
+  #firebase_remote_config: ^2.0.7
+  #firebase_dynamic_links: ^4.2.3
+  cloud_firestore: ^3.1.15
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -63,6 +71,14 @@ flutter:
       - images/sign.jpg
       - images/login.png
       - images/sign1.png
+    #slider
+      - images/slider/slider1.jpg
+      - images/slider/slider2.jpg
+      - images/slider/slider3.png
+      - images/slider/slider4.jpg
+      - images/slider/slider5.png
+      - images/slider/slider6.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
